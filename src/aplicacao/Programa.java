@@ -35,6 +35,24 @@ public class Programa {
 
 		System.out.println(conta);
 
+		System.out.println();
+
+		System.out.print("INSIRA O VALOR PARA DEPÓSITO :");
+		double valorDeposito = sc.nextDouble();
+		conta.deposito(valorDeposito);
+
+		System.out.println(conta);
+
+		System.out.println();
+
+		System.out.print("INSIRA O VALOR PARA SAQUE: ");
+		double valorSaque = sc.nextDouble();
+		conta.saque(valorSaque);
+		
+		System.out.println();
+		
+		System.out.println(conta);
+
 		sc.close();
 
 	}
