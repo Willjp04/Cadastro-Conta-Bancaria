@@ -6,10 +6,11 @@ public class Conta {
 	private double saldo;
 
 	// CONSTRUTOR PARA CLIENTE COM DEPÓSITO
-	public Conta(int numero, String titular, double saldo) {
+	public Conta(int numero, String titular, double depositoInicial) {
 		this.numero = numero;
 		this.titular = titular;
-		this.saldo = saldo;
+		// CHAMANDO O MÉTODO DEPÓSITO
+		deposito(depositoInicial);
 	}
 
 	// CONSTRUTOR PARA CLIENTE SEM DEPÓSITO
@@ -24,10 +25,6 @@ public class Conta {
 		return numero;
 	}
 
-	public void setNumero(int numero) {
-		this.numero = numero;
-	}
-
 	public String getTitular() {
 		return titular;
 	}
@@ -39,6 +36,16 @@ public class Conta {
 	public double getSaldo() {
 		return saldo;
 	}
-	
-	
+
+	// MÉTODO PARA DEPÓSITO
+	public void deposito(double quantia) {
+		saldo += quantia;
+	}
+
+	// MÉTODO PARA SAQUE
+	public void saque(double quantia) {
+		saldo -= quantia + 5.00;
+
+	}
+
 }
