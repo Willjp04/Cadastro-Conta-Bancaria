@@ -1,7 +1,7 @@
 package aplicacao;
 
 import java.util.Scanner;
-import entidades.DadosBanco;
+
 
 public class Programa {
 
@@ -9,9 +9,16 @@ public class Programa {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("CADASTRO DE CONTA BANCÁRIA ");
 
+		// DAR ESPAÇO
+		System.out.println();
+
 		System.out.print("INSIRA O NÚMERO DA CONTA ");
 
-		int numeroDaConta = sc.nextInt();
+		
+		System.out.print("INSIRA O NOME DO TITULAR DA CONTA ");
+		
+		
+		
 
 		sc.close();
 
