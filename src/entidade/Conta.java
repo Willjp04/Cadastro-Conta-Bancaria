@@ -47,5 +47,18 @@ public class Conta {
 		saldo -= quantia + 5.00;
 
 	}
+	
+	public String toString() {
+		return
+		"CONTA "
+		+ numero
+		+ ", "
+		+ "TITULAR: "
+		+ titular
+		+", "
+		+ "SALDO EM CONTA: "
+		+ saldo;
+	}
+	
 
 }
